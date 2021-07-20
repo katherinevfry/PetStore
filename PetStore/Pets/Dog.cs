@@ -20,8 +20,17 @@ namespace PetStore.Pets
         //accessibility or access modifier...who has access to this property? most properties are public
         //AP     type  name(capitalize) get and set must be added in curly braces
         public string Size { get; set; } //auto-property
-        public short Weight { get; set; }
+        public short Weight { get; private set; } //private setter -- you can only change the weight from inside this class
         public string Name { get; set; }
+
+        //set an initial set of info for private properties
+        //constructor / constructor method
+        public Dog(string name, short weight, string size)
+        {
+            Name = name;
+            Weight = weight;
+            Size = size;
+        }
 
         //Method Signature
         //there are four parts to a method signature

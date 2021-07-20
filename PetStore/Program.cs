@@ -8,16 +8,13 @@ namespace PetStore
     {
         static void Main(string[] args)
         {
-            var melbaDog = new Dog();
-            melbaDog.Name = "Melba";
-            melbaDog.Size = "medium";
-            melbaDog.Weight = 60;
+            var melbaDog = new Dog("Melba", 60, "Medium");
             melbaDog.Eat("chocolate");
 
-            var barley = new Dog();
-            barley.Name = "Barley";
-            barley.Size = "Medium";
-            barley.Weight = 50;
+            var barley = new Dog("Barley", 50, "Medium");
+            //barley.Name = "Barley";
+            //barley.Size = "Medium";
+            //barley.Weight = 50;
             barley.Eat("healthy food");
         }
     }
