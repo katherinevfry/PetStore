@@ -25,6 +25,7 @@ namespace PetStore.Pets
 
         //set an initial set of info for private properties
         //constructor / constructor method
+        //constructors will never have a return statement
         public Dog(string name, short weight, string size)
         {
             Name = name;
@@ -53,6 +54,8 @@ namespace PetStore.Pets
                 Weight += 2;
             }
             Console.WriteLine($"{Name} ate {typeOfFood} and now weighs {Weight} pounds");
+
+            //Fields are for data you are hiding or keeping to yourself.
         }
     }
 }

@@ -16,6 +16,33 @@ namespace PetStore
             //barley.Size = "Medium";
             //barley.Weight = 50;
             barley.Eat("healthy food");
+
+            //object initializer
+            var tiger = new Tiger
+            {
+                Name = "Kisa",
+                NumberOfKills = 0,
+                Size = "Medium"
+            };
+
+            tiger.Bite("Chris");
+            tiger.Bite("Chris");
+            tiger.Bite("Chris");
+            tiger.Bite("Chris");
+            tiger.Bite("Chris");
+            tiger.Bite("Chris");
+            tiger.Bite("Chris");
+
+            var bear = new Bear("Yogi", "Brown");
+            bear.EatFish(5);
+            bear.EatFish(5);
+            bear.EatFish(5);
+
+            bear.BestTigerFriend = tiger;
+            //passing an object
+            //bear.BestTigerFriend = new Tiger { Name = "Katy", NumberOfKills = 0, Size = "baby" };
+
+            bear.HangOutWithBestFriend();
         }
     }
 }
